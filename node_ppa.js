@@ -1,6 +1,11 @@
 var http = require('http');
 var parse = require('url').parse;
 var qs = require('querystring');
+var sylvester = require('sylvester');
+
+function nndist(req, res, callback) {
+    // sylvester stuff
+}
 
 var server = http.createServer(function(req, res) {
     
@@ -21,7 +26,7 @@ var server = http.createServer(function(req, res) {
     switch (url.pathname) {
         case '/nndist':
             console.log('doing nndist()...');
-            count(req, res, url);
+            nndist(req, res, callback);
             break;
     }
 });
