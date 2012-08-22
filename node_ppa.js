@@ -74,8 +74,8 @@ function nndist(query, res, callback) {
                         // return Math.min.apply( Math, array );
                     // };
                     ascendingrow = darray.sort(function(a,b){return a - b});
-                    nndist = parseFloat(ascendingrow[1]);
-                    nnarray.push(nndist);
+                    currentdist = parseFloat(ascendingrow[1]);
+                    nnarray.push(currentdist);
                     rowSorter(i+1);
                 } else {
                     var nndistsum = 0;
