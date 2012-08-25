@@ -84,7 +84,7 @@ function nndist(query, res, callback) {
                             nndistsum += nnarray[j];
                             meanDist(j+1);
                         } else {
-                            nnvalue = nndistsum / nnarray.length;
+                            nnvalue = Math.round(nndistsum / nnarray.length);
                         }
                     }
                     meanDist(0);
