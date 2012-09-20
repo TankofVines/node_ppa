@@ -67,7 +67,6 @@ function nndist(query, res, callback) {
             distCalc(0);
         } else {
             var nnarray = [];
-        
             function rowSorter(i) {
                 if(i<darray.length) {
                     // Array.min = function( array ){
